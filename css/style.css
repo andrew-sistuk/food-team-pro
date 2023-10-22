@@ -9,6 +9,7 @@ body {
     width: 1280px;
     padding: 0 16px;
     margin: 0 auto;
+    background-color: aqua;
 }
 /* components */
 .button {
@@ -60,4 +61,50 @@ address {
 
 button {
     cursor: pointer;
+}
+
+/* Hero-section */
+
+.hero {
+    background-color: tomato;
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 69px;
+    padding-left: 16px;
+    gap: 143px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 502.4px;
+    margin-top: 119px;
+}
+
+.hero-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 511px;
+    margin-top: 28px;
+}
+
+.hero-button {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: block;
+    min-width: 98px;
+    height: 32px;
+    border-radius: 30px;
+    background: #bbf330;
+    border: none;
+    margin-top: 40px;
+}
+
+.hero-image{
+    border-radius: 580px;
+    border: 26px solid #ffe550;
+    /* margin-right: 30px; */
 }
