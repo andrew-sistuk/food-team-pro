@@ -61,3 +61,78 @@ address {
 button {
     cursor: pointer;
 }
+
+
+/* CUSTOMERS BLOCK --- made by DENYS */
+.section-dec {
+    background-color: #FFE550;
+    padding: 140px 104px 126px 32px;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 33px;
+}
+
+.title-customers {
+    max-width: 501px;
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.text-customers-info {
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reviews {
+    display: flex;
+    gap: 139px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFEFE;
+    max-width: 501px;
+    height: 231px;
+    padding: 14px;
+    border-radius: 0px 30px 30px 30px;
+}
+.review-text {
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.reviewer-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 48px;
+    border: 2px solid #FFE550;
+}
+
+.name-review {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
