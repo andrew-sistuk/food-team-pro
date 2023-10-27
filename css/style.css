@@ -121,6 +121,8 @@ button {
     display: flex;
     gap: 16px;
     align-items: center;
+    border-right: 2px solid green;
+    max-width: 180px;
 }
 
 .avatar {
