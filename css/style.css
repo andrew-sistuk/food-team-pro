@@ -109,12 +109,24 @@ button {
     padding: 14px;
     border-radius: 0px 30px 30px 30px;
 }
+
+.review-stars-container {
+    display: flex;
+    height: 17px;
+    gap: 4px;
+    margin-bottom: 28px;
+}
+
+.star {
+    fill: #FFE550;
+}
 .review-text {
     color: #2C2C2C;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 40px;
 }
 
 .reviewer-info {
