@@ -1,26 +1,26 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #2C2C2C;
-    font-size: 16px;
-    background-color: #FEFEFE;
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-size: 16px;
+  background-color: #fefefe;
 }
 
 .container {
-    width: 1280px;
-    padding: 0 16px;
-    margin: 0 auto;
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 /* components */
 .button {
-    min-width: 98px;
-    height: 32px;
-    border: none;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.5;
-    background: var(--Button-green, #BBF330);
-    color: var(--Black, #2C2C2C);
-    border-radius: 30px;
+  min-width: 98px;
+  height: 32px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  background: var(--Button-green, #bbf330);
+  color: var(--Black, #2c2c2c);
+  border-radius: 30px;
 }
 /* Стилі для обнулення верхніх відступів у елементів */
 h1,
@@ -30,34 +30,153 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей списків (ul) */
 ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей у посилань */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Властивості для коректного відображення картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Властивості для обнулення курсиву address */
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 button {
+<<<<<<< Updated upstream
     cursor: pointer;
 }
+=======
+  cursor: pointer;
+}
+
+/* ========OFFERINGS SECTION --- Sasha========= */
+.offerings-section {
+  background-color: #ffe550;
+  padding-top: 113px;
+  padding-bottom: 124px;
+  padding-left: 16px;
+  border: 1px solid blue;
+  display: flex;
+  column-gap: 90px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.offerings-image-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe550;
+  background-clip: content-box;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  /* margin-top: 167px; */
+}
+
+.offerings-inside-image-bg {
+  position: relative;
+  width: 502px;
+  height: 502px;
+  border-radius: 50%;
+  background-color: #fefefe;
+}
+.image {
+  display: block;
+  position: absolute;
+  left: 60px;
+  bottom: 78px;
+}
+
+*/ .offerings-about {
+  border: 1px solid blue;
+}
+
+/* CUSTOMERS BLOCK --- made by DENYS */
+.section-dec {
+  background-color: #ffe550;
+  padding: 140px 104px 126px 32px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 33px;
+}
+
+.title-customers {
+  max-width: 501px;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.text-customers-info {
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reviews {
+  display: flex;
+  gap: 139px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  max-width: 501px;
+  height: 231px;
+  padding: 14px;
+  border-radius: 0px 30px 30px 30px;
+}
+.review-text {
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.reviewer-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 48px;
+}
+
+.name-review {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+>>>>>>> Stashed changes
