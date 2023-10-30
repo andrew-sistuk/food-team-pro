@@ -59,13 +59,8 @@ address {
 }
 
 button {
-<<<<<<< Updated upstream
-    cursor: pointer;
-}
-=======
   cursor: pointer;
 }
-
 /* ========OFFERINGS SECTION --- Sasha========= */
 .offerings-section {
   background-color: #ffe550;
@@ -75,8 +70,8 @@ button {
   border: 1px solid blue;
   display: flex;
   column-gap: 90px;
-  width: 1280px;
-  margin: 0 auto;
+  /* width: 1280px;
+  margin: 0 auto; */
 }
 
 .offerings-image-thumb {
@@ -109,74 +104,3 @@ button {
 */ .offerings-about {
   border: 1px solid blue;
 }
-
-/* CUSTOMERS BLOCK --- made by DENYS */
-.section-dec {
-  background-color: #ffe550;
-  padding: 140px 104px 126px 32px;
-}
-
-.top-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  margin-bottom: 33px;
-}
-
-.title-customers {
-  max-width: 501px;
-  color: #2c2c2c;
-  font-family: "Roboto", sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 20px;
-}
-
-.text-customers-info {
-  color: #2c2c2c;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.reviews {
-  display: flex;
-  gap: 139px;
-}
-
-.review-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #fefefe;
-  max-width: 501px;
-  height: 231px;
-  padding: 14px;
-  border-radius: 0px 30px 30px 30px;
-}
-.review-text {
-  color: #2c2c2c;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.reviewer-info {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.avatar {
-  border-radius: 48px;
-}
-
-.name-review {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
->>>>>>> Stashed changes
