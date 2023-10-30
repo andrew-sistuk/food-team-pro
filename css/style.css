@@ -130,6 +130,7 @@ button {
   display: flex;
   flex-direction: row;
   column-gap: 67px;
+  margin-bottom: 32px;
 }
 
 .about-offerings-list-item {
@@ -162,4 +163,24 @@ button {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.about-offerings-button {
+  height: 40px;
+  padding: 10px 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 2px solid #7eb101;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.about-offerings-button:hover,
+.about-offerings-button:focus {
+  background-color: #bbf330;
 }
