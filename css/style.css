@@ -68,14 +68,11 @@ button {
 /* ========OFFERINGS SECTION --- Sasha========= */
 .offerings-section {
   background-color: #ffe550;
-  padding-top: 113px;
+  padding-top: 167px;
   padding-bottom: 124px;
-  padding-left: 16px;
-  border: 1px solid blue;
+  padding-bottom: 124px;
   display: flex;
   column-gap: 90px;
-  /* width: 1280px;
-  margin: 0 auto; */
 }
 
 .offerings-image-thumb {
@@ -88,7 +85,6 @@ button {
   height: 550px;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
-  /* margin-top: 167px; */
 }
 
 .offerings-inside-image-bg {
@@ -98,6 +94,7 @@ button {
   border-radius: 50%;
   background-color: #fefefe;
 }
+
 .image {
   display: block;
   position: absolute;
@@ -105,6 +102,64 @@ button {
   bottom: 78px;
 }
 
-*/ .offerings-about {
-  border: 1px solid blue;
+.about-offerings {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+}
+
+.about-offerings-title {
+  height: 100px;
+  width: 526px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-offerings-text {
+  width: 500px;
+  height: 72px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.about-offerings-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 67px;
+}
+
+.about-offerings-list-item {
+}
+
+.offerings-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  margin-bottom: 8px;
+}
+
+.offerings-icon {
+  fill: #7eb101;
+  flex-shrink: 0;
+}
+
+.about-offerings-feature-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.about-offerings-feature {
+  width: 253px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
 }
