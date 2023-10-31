@@ -70,19 +70,14 @@ button {
 }
 
 .top-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     margin-bottom: 33px;
 }
 
 .title-customers {
-    max-width: 501px;
     color: #2C2C2C;
     font-family: 'Roboto', sans-serif;
     font-size: 42px;
     font-weight: 700;
-    line-height: normal;
     margin-bottom: 20px;
 }
 
@@ -90,9 +85,7 @@ button {
     color: #2C2C2C;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .reviews {
@@ -106,7 +99,7 @@ button {
     background-color: #FEFEFE;
     max-width: 501px;
     height: 231px;
-    padding: 14px;
+    padding: 14px 14px 17px 14px;
     border-radius: 0px 30px 30px 30px;
 }
 
@@ -114,8 +107,10 @@ button {
     display: flex;
     height: 17px;
     gap: 4px;
-    margin-bottom: 28px;
+    margin-bottom: 29px; /*-- ЗАОКРУГЛЮВАВ ДО 28 ТОМУ ЩО МАКЕТ МАЄ БУТИ КРАТНИЙ АБО 4 АБО 5"  */
 }
+
+/*  */
 
 .star {
     fill: #FFE550;
@@ -125,7 +120,6 @@ button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: normal;
     margin-bottom: 40px;
 }
 
@@ -140,12 +134,5 @@ button {
 .avatar {
     border-radius: 48px;
 }
-
-.name-review {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 
 
