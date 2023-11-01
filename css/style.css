@@ -133,5 +133,58 @@ button {
     position: relative;
 }
 
-
-
+/* Favorites section */
+.favorites-section{
+    background-color: #FEFEFE;
+}
+.favorites-container{
+    padding-top: 120px;
+    padding-bottom: 101px;
+    margin: 0 auto;
+}
+.favorites-text-block{
+    width: 656px;
+    margin: 0 auto 40px;
+}
+.title-favorites{
+    font-size: 42px;
+    font-weight: 700;
+    color: #2C2C2C;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-favotites{
+    font-size: 16px;
+    color: #2C2C2C;
+    line-height: normal;
+    text-align: center;
+}
+.favorites-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.favorites-box-cell{
+    width: calc((100% - 64px)/3);
+}
+.food-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 395px;
+    height: 397px;
+    border-radius: 50%;
+    border: 16px solid #FFE550;
+    background-color: #FEFEFE;
+    overflow: hidden;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.food-frame:hover{
+    border-color: #BBF330;
+}
+.food-img{
+    border-radius: 50%;
+    width: 100%;
+}
