@@ -63,112 +63,43 @@ button {
 }
 
 
-/* CUSTOMERS BLOCK --- made by DENYS */
-.section-dec {
-    background-color: #FFE550;
-    padding: 140px 104px 126px 32px;
-}
-
-.top-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-bottom: 33px;
-}
-
-.title-customers {
-    max-width: 501px;
-    color: #2C2C2C;
-    font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20px;
-}
-
-.text-customers-info {
-    color: #2C2C2C;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.reviews {
-    display: flex;
-    gap: 139px;
-}
-
-.review-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #FEFEFE;
-    max-width: 501px;
-    height: 231px;
-    padding: 14px;
-    border-radius: 0px 30px 30px 30px;
-}
-.review-text {
-    color: #2C2C2C;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.reviewer-info {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.avatar {
-    border-radius: 48px;
-}
-
-.name-review {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 /* Favorites section */
 .favorites-section{
     background-color: #FEFEFE;
 }
+
 .favorites-container{
     padding-top: 120px;
     padding-bottom: 101px;
     margin: 0 auto;
 }
-.favorites-text-block{
-    width: 656px;
-    margin: 0 auto 40px;
-}
+
 .title-favorites{
     font-size: 42px;
     font-weight: 700;
     color: #2C2C2C;
-    line-height: normal;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .text-favotites{
     font-size: 16px;
     color: #2C2C2C;
-    line-height: normal;
     text-align: center;
+    margin-bottom: 40px;
 }
+
 .favorites-box{
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
+    row-gap: 32px;
+    justify-content: space-between;
 }
+
 .favorites-box-cell{
     width: calc((100% - 64px)/3);
 }
+
 .food-frame{
     display: flex;
     justify-content: center;
@@ -178,7 +109,6 @@ button {
     border-radius: 50%;
     border: 16px solid #FFE550;
     background-color: #FEFEFE;
-    overflow: hidden;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .food-frame:hover{
@@ -186,5 +116,5 @@ button {
 }
 .food-img{
     border-radius: 50%;
-    width: 100%;
+    overflow: hidden;
 }
