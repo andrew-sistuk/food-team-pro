@@ -71,22 +71,22 @@ button {
 .favorites-container{
     padding-top: 120px;
     padding-bottom: 101px;
-    margin: 0 auto;
 }
 
 .title-favorites{
     font-size: 42px;
     font-weight: 700;
-    color: #2C2C2C;
     text-align: center;
     margin-bottom: 20px;
+    color: #2C2C2C;
 }
 
 .text-favotites{
     font-size: 16px;
-    color: #2C2C2C;
+    font-weight: 400px;
     text-align: center;
     margin-bottom: 40px;
+    color: #2C2C2C;
 }
 
 .favorites-box{
@@ -105,7 +105,9 @@ button {
     justify-content: center;
     align-items: center;
     width: 395px;
-    height: 397px;
+    height: 395px;
+    margin: 0 auto;
+    overflow: hidden;
     border-radius: 50%;
     border: 16px solid #FFE550;
     background-color: #FEFEFE;
@@ -115,6 +117,7 @@ button {
     border-color: #BBF330;
 }
 .food-img{
+    width: 315px;
+    height: 315px;
     border-radius: 50%;
-    overflow: hidden;
 }
