@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2C2C2C;
     font-size: 16px;
+    color: #2C2C2C;
     background-color: #FEFEFE;
 }
 
@@ -10,7 +10,9 @@ body {
     padding: 0 16px;
     margin: 0 auto;
 }
+
 /* components */
+
 .button {
     min-width: 98px;
     height: 32px;
@@ -18,10 +20,11 @@ body {
     font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
-    background: var(--Button-green, #BBF330);
-    color: var(--Black, #2C2C2C);
+    background: #BBF330;
+    color: #2C2C2C;
     border-radius: 30px;
 }
+
 /* Стилі для обнулення верхніх відступів у елементів */
 h1,
 h2,
@@ -34,6 +37,7 @@ p {
 }
 
 /* Клас для обнулення базових властивостей списків (ul) */
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -41,11 +45,13 @@ ul {
 }
 
 /* Клас для обнулення базових властивостей у посилань */
+
 a {
     text-decoration: none;
 }
 
 /* Властивості для коректного відображення картинок */
+
 img {
     display: block;
     max-width: 100%;
@@ -62,18 +68,58 @@ button {
     cursor: pointer;
 }
 
+/* ======== Hero-section ======== */
 
-/* Favorites section */
-.favorites-section{
+.hero {
+    padding-top: 14px;
+    padding-bottom: 69px;
+}
+
+.hero-container {
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+.text-container {
+    padding-top: 145px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 502.4px;
+    margin-bottom: 28px;
+}
+
+.hero-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 511px;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    border-radius: 50%;
+    border: 26px solid #ffe550;
+    width: 580px;
+    height: 580px;
+}
+
+/* ======== Favorites ======== */
+
+.favorites-section {
     background-color: #FEFEFE;
 }
 
-.favorites-container{
+.favorites-container {
     padding-top: 120px;
     padding-bottom: 101px;
 }
 
-.title-favorites{
+.title-favorites {
     font-size: 42px;
     font-weight: 700;
     text-align: center;
@@ -81,7 +127,7 @@ button {
     color: #2C2C2C;
 }
 
-.text-favotites{
+.text-favotites {
     font-size: 16px;
     font-weight: 400px;
     text-align: center;
@@ -89,18 +135,18 @@ button {
     color: #2C2C2C;
 }
 
-.favorites-box{
+.favorites-box {
     display: flex;
     flex-wrap: wrap;
     row-gap: 32px;
     justify-content: space-between;
 }
 
-.favorites-box-cell{
+.favorites-box-cell {
     width: calc((100% - 64px)/3);
 }
 
-.food-frame{
+.food-frame {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,11 +159,85 @@ button {
     background-color: #FEFEFE;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.food-frame:hover{
+
+.food-frame:hover {
     border-color: #BBF330;
 }
-.food-img{
+
+.food-img {
     width: 315px;
     height: 315px;
     border-radius: 50%;
+}
+
+/* ======== Customers ======== */
+
+.section-dec {
+    background-color: #FFE550;
+    padding: 140px 104px 126px 32px;
+}
+
+.top-container {
+    margin-bottom: 33px;
+}
+
+.title-customers {
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-customers-info {
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.reviews {
+    display: flex;
+    gap: 139px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 501px;
+    height: 231px;
+    padding: 14px 14px 17px 14px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #FEFEFE;
+}
+
+.review-stars-container {
+    display: flex;
+    height: 17px;
+    gap: 4px;
+    margin-bottom: 29px;
+}
+
+.star {
+    fill: #FFE550;
+}
+
+.review-text {
+    color: #2C2C2C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.reviewer-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-right: 2px solid green;
+    max-width: 180px;
+}
+
+.avatar {
+    border-radius: 48px;
 }
