@@ -68,114 +68,164 @@ button {
     cursor: pointer;
 }
 
-/* ======== Hero-section ======== */
 
-.hero {
-    padding-top: 14px;
-    padding-bottom: 69px;
+
+/* footer */
+
+
+
+
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
 }
 
-.hero-container{
+.footer-container{
+    background-color: #FEFEFE;
+    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
+    padding: 100px 0;
+    display: block;
+    
+    background-image: url(../images/fruts.png);
+    background-repeat: no-repeat; 
+    background-position: bottom;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    background-size: 76% 60% ;
+}
+
+.footer-nav{
     display: flex;
-    padding-right: 30px;
+    align-items: center;
     justify-content: space-between;
 }
 
-.text-container{
-	padding-top: 145px;
+.footer-nav-options{
+    color: #2C2C2C;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 28px;
+    display: flex;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    width: 502.4px;
-    margin-bottom: 28px;
+.footer-logo{
+    margin-right: 148px;
 }
 
-.hero-text {
-    font-size: 16px;
+
+
+
+.footer-form-div{
+    margin-left: 320px;
+}
+
+.footer-form{
+    display: flex;
+    gap: 13px;
+    margin: 12px 0;
+}
+
+.footer-form > *:first-child {
+    margin-left: -13px;
+  }
+
+.footer-form-input{
+    border-radius: 30px;
+    border-color: #FFE550;
+    background: #FEFEFE;
+    display: inline-flex;
+    height: 42px;
+    padding: 12px 61.5px 12px 12px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-form-input:focus{
+    border-color: #FFE550;
+}
+
+.footer-form-input::placeholder{
+    color: #505050;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    width: 511px;
-    margin-bottom: 40px;
-}
+    }
 
-.hero-image{
-    border-radius: 50%;
-    border: 26px solid #ffe550;
-    width: 580px;
-    height: 580px;
-}
+    .footer-form-button{
+        display: inline-flex;
+        padding: 11px 22px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        border: 0.854px solid #7EB101;
+        background: #FFF;
+    }
 
-/* ======== Customers ======== */
+    .footer-form-label{
+        display: block;
+    }
 
-.section-dec {
-    background-color: #FFE550;
-    padding: 140px 104px 126px 32px;
-}
+    .footer-form-paragraph-top{
+        color:  #2C2C2C;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5; 
+        width: 342px;
+        
+    }
 
-.top-container {
-    margin-bottom: 33px;
-}
+    .footer-form-paragraph-bottom{
+        width: 341px;
+        height: 14px;
+        flex-shrink: 0;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-.title-customers {
-    color: #2C2C2C;
-    font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+    .footer-form-paragraph-bottom-span{
+        color: #7EB101;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
 
-.text-customers-info {
-    color: #2C2C2C;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
 
-.reviews {
-    display: flex;
-    gap: 139px;
-}
 
-.review-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 501px;
-    height: 231px;
-    padding: 14px 14px 17px 14px;
-    border-radius: 0px 30px 30px 30px;
-	background-color: #FEFEFE;
-}
+    .footer-inf{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    
+    .footer-info{
+        color: #7EB101;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration-line: underline;
+        gap: 20px;
+        display: flex;
+        
+    }
 
-.review-stars-container {
-    display: flex;
-    height: 17px;
-    gap: 4px;
-    margin-bottom: 29px;
-}
+    .footer-copyright{
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-.star {
-    fill: #FFE550;
-}
-
-.review-text {
-    color: #2C2C2C;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.reviewer-info {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    border-right: 2px solid green;
-    max-width: 180px;
-}
-
-.avatar {
-    border-radius: 48px;
-}
