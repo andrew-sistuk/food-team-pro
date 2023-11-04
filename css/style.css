@@ -75,14 +75,14 @@ button {
     padding-bottom: 69px;
 }
 
-.hero-container{
+.hero-container {
     display: flex;
     padding-right: 30px;
     justify-content: space-between;
 }
 
-.text-container{
-	padding-top: 145px;
+.text-container {
+    padding-top: 145px;
 }
 
 h1 {
@@ -101,11 +101,73 @@ h1 {
     margin-bottom: 40px;
 }
 
-.hero-image{
+.hero-image {
     border-radius: 50%;
     border: 26px solid #ffe550;
     width: 580px;
     height: 580px;
+}
+
+/* ======== Favorites ======== */
+
+.favorites-section {
+    background-color: #FEFEFE;
+}
+
+.favorites-container {
+    padding-top: 120px;
+    padding-bottom: 101px;
+}
+
+.title-favorites {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2C2C2C;
+}
+
+.text-favotites {
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2C2C2C;
+}
+
+.favorites-box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    justify-content: space-between;
+}
+
+.favorites-box-cell {
+    width: calc((100% - 64px)/3);
+}
+
+.food-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 395px;
+    height: 395px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 16px solid #FFE550;
+    background-color: #FEFEFE;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.food-frame:hover {
+    border-color: #BBF330;
+}
+
+.food-img {
+    width: 315px;
+    height: 315px;
+    border-radius: 50%;
 }
 
 /* ======== Customers ======== */
@@ -146,7 +208,7 @@ h1 {
     height: 231px;
     padding: 14px 14px 17px 14px;
     border-radius: 0px 30px 30px 30px;
-	background-color: #FEFEFE;
+    background-color: #FEFEFE;
 }
 
 .review-stars-container {
