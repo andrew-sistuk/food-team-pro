@@ -1,28 +1,28 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #2C2C2C;
-    background-color: #FEFEFE;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #2c2c2c;
+  background-color: #fefefe;
 }
 
 .container {
-    width: 1280px;
-    padding: 0 16px;
-    margin: 0 auto;
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 /* components */
 
 .button {
-    min-width: 98px;
-    height: 32px;
-    border: none;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.5;
-    background: #BBF330;
-    color: #2C2C2C;
-    border-radius: 30px;
+  min-width: 98px;
+  height: 32px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  background: #bbf330;
+  color: #2c2c2c;
+  border-radius: 30px;
 }
 
 /* Стилі для обнулення верхніх відступів у елементів */
@@ -33,199 +33,163 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей списків (ul) */
 
 ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Клас для обнулення базових властивостей у посилань */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Властивості для коректного відображення картинок */
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Властивості для обнулення курсиву address */
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
 
 /* footer */
 
-
-
-
-
-footer{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    line-height: normal;
+.footer-container {
+  padding: 100px 0;
+  display: block;
+  background-image: url("../images/fruts.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-size: 1211px 266px;
+  background-color: #fefefe;
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
 }
 
-.footer-container{
-    background-color: #FEFEFE;
-    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
-    padding: 100px 0;
-    display: block;
-    
-    background-image: url(../images/fruts.png);
-    background-repeat: no-repeat; 
-    background-position: bottom;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    background-size: 75% 60%;
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
-.footer-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer-logo-options {
+  display: flex;
 }
 
-.footer-nav-options{
-    color: #2C2C2C;
-    font-size: 14px;
-    font-weight: 400;
-    gap: 28px;
-    display: flex;
+.footer-nav-options {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 28px;
+  display: flex;
+  padding: 18px 0;
 }
 
-.footer-logo{
-    margin-right: 148px;
+.footer-logo {
+  margin-right: 143px;
 }
 
-
-
-
-.footer-form-div{
-    margin-left: 320px;
+.footer-form {
+  display: flex;
+  margin-bottom: 12px;
 }
 
-.footer-form{
-    display: flex;
-    gap: 13px;
-    margin: 12px 0;
+.footer-form-input {
+  border-radius: 30px;
+  display: inline-flex;
+  height: 42px;
+  padding: 12px 62px 12px 12px;
+  align-items: center;
+  flex-shrink: 0;
+  outline: none;
+  margin-right: 13px;
+  border: 1px solid #ffe550;
+  background: #fefefe;
 }
 
-.footer-form > *:first-child {
-    margin-left: -13px;
-  }
-
-.footer-form-input{
-    border-radius: 30px;
-    border: 0.854px solid #FFE550;
-    background: #FEFEFE;
-    display: inline-flex;
-    height: 42px;
-    padding: 12px 61.5px 12px 12px;
-    align-items: center;
-    flex-shrink: 0;
+.footer-form-input:focus {
+  border-color: #ffe550;
 }
 
-.footer-form-input:focus{
-    border-color: #FFE550;
+.footer-form-input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #505050;
 }
 
-.footer-form-input::placeholder{
-    color: #505050;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    }
+.footer-form-button {
+  display: inline-flex;
+  padding: 11px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #7eb101;
+  background: #fff;
+}
 
-    .footer-form-button{
-        display: inline-flex;
-        padding: 11px 22px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
-        border: 0.854px solid #7EB101;
-        background: #FFF;
-    }
+.footer-form-label {
+  display: block;
+}
 
-    .footer-form-label{
-        display: block;
-    }
+.footer-form-paragraph-top {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 342px;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+}
 
-    .footer-form-paragraph-top{
-        color:  #2C2C2C;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5; 
-        width: 342px;
-        
-    }
+.footer-form-paragraph-bottom {
+  width: 341px;
+  height: 14px;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2c2c2c;
+}
 
-    .footer-form-paragraph-bottom{
-        width: 341px;
-        height: 14px;
-        flex-shrink: 0;
-        color: #2C2C2C;
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+.footer-form-paragraph-bottom-link {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: #7eb101;
+}
 
-    .footer-form-paragraph-bottom-span{
-        color: #7EB101;
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-decoration-line: underline;
-    }
+.footer-inf {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
 
+.footer-info {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  gap: 20px;
+  display: flex;
+  color: #7eb101;
+}
 
-
-    .footer-inf{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 80px;
-    }
-    
-    .footer-info{
-        color: #7EB101;
-        font-size: 12px;
-        font-weight: 400;
-        text-decoration-line: underline;
-        gap: 20px;
-        display: flex;
-        
-    }
-
-    .footer-copyright{
-        color: #2C2C2C;
-        font-family: Roboto;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
+.footer-copyright {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2c2c2c;
+}
