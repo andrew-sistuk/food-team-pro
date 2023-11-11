@@ -68,6 +68,59 @@ button {
     cursor: pointer;
 }
 
+/* ======== Header ======== */
+
+.header {
+    box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-link {
+    padding: 10px 0;
+}
+
+.header-menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.header-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+.header-nav-link {
+    color: #2C2C2C;
+    padding: 28px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 250ms linear, text-decoration 250ms linear, font-weight 250ms linear;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: #BBF330;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.header-button {
+    transition: background-color 250ms linear;
+}
+
+.header-button:hover,
+.header-button:focus {
+    background-color: #FFE450;
+}
+
 /* ======== Hero-section ======== */
 
 .hero {

@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food Delivery</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <!-- Header Alina-->
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header Alina-->
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo-link" href="./index.html">
+          <svg class="header-logo-image" width="66" height="52">
+            <use href="./images/icon/symbol-defs.svg#main-logo"></use>
+          </svg>
+        </a>
+        <div class="header-menu-button">
+          <nav class="header-navigation">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#about">About</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#service">Service</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button header-button" type="button">Order Now</button>
+        </div>
+      </div>
+    </header>
+    <main>
     <!-- Hero Myhailo -->
     <section class="hero">
       <div class="container hero-container">
@@ -32,14 +67,12 @@
         <img class="hero-image" src="./images/salad.png" alt="salad" width="528" height="528" />
       </div>
     </section>
-
     <!-- Offerings Sasha -->
     <!-- Favorites Ira -->
     <section class="favorites-section">
       <div class="container favorites-container">
         <h2 class="title-favorites">Some of Our Favorites</h2>
         <p class="text-favotites">Looking for something delicious?</p>
-        <!-- Block whis images -->
         <ul class="favorites-box">
           <li class="favorites-box-cell">
             <a class="link-from-image food-frame" href="">
@@ -71,11 +104,10 @@
                 width="315" height="315">
             </a>
           </li>
-        </ul> <!--  End box -->
-      </div> <!--  End container -->
+        </ul>
+      </div>
     </section>
     <!-- Customers Denis  -->
-
     <section class="section-dec">
       <div class="container">
         <div class="top-container">
@@ -83,7 +115,7 @@
           <p class="text-customers-info">
             Don't just take our word for it - see what our satisfied customers have to say
           </p>
-        </div> <!-- End 1st div  -->
+        </div>
         <div class="reviews">
           <div class="review-container">
             <div class="review-stars-container">
@@ -102,7 +134,7 @@
               <svg class="star" width="17" height="17">
                 <use href="./images/icon/symbol-defs.svg#icon-star"></use>
               </svg>
-            </div><!-- End STARS div  -->
+            </div>
             <p class="review-text">
               &#X0201C;The Best app I have used to order food in a while, so many options to choose from too, I would
               recommend to a freind, No questions asked&#X0201C;
@@ -113,8 +145,8 @@
                 <p>Sumith Shah</p>
                 <p>Some Dude</p>
               </div>
-            </div> <!-- End review -->
-          </div> <!-- End 1s container review -->
+            </div>
+          </div>
           <div class="review-container">
             <div class="review-stars-container">
               <svg class="star" width="17" height="17">
@@ -132,7 +164,7 @@
               <svg class="star" width="17" height="17">
                 <use href="./images/icon/symbol-defs.svg#icon-star"></use>
               </svg>
-            </div><!-- End STARS div  -->
+            </div>
             <p class="review-text">
               &#X0201C;The Best app I have used to order food in a while, so many options to choose from too, I would
               recommend to a freind, No questions asked&#X0201C;
@@ -143,8 +175,8 @@
                 <p>Sumith Shah</p>
                 <p>Some Dude</p>
               </div>
-            </div> <!-- End review -->
-          </div> <!-- End 2st container review -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -152,5 +184,4 @@
   </main>
   <!-- Footer Yegor -->
 </body>
-
 </html>
