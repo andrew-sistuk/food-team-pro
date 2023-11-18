@@ -70,17 +70,13 @@ button {
   background-color: #ffe550;
   padding-top: 167px;
   padding-bottom: 124px;
-  padding-bottom: 124px;
   display: flex;
   column-gap: 90px;
 }
 
 .offerings-image-thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffe550;
   background-clip: content-box;
+  padding: 24px;
   width: 550px;
   height: 550px;
   border-radius: 50%;
@@ -89,45 +85,29 @@ button {
 
 .offerings-inside-image-bg {
   position: relative;
-  width: 502px;
-  height: 502px;
-  border-radius: 50%;
   background-color: #fefefe;
 }
 
 .apple-image {
-  display: block;
   position: absolute;
   z-index: 999;
-  left: 60px;
-  bottom: 78px;
+  left: 84px;
+  bottom: 102px;
 }
 
 .apple-shadow-icon {
   position: absolute;
   z-index: 998;
-  flex-shrink: 0;
-  left: 131px;
-  bottom: 51px;
-  filter: blur(13px);
-  fill: radial-gradient(
-    50% 50% at 50% 50%,
-    #2f583f 0%,
-    rgba(105, 105, 105, 0.7) 100%
-  );
-  filter: blur(13px);
-  opacity: 0.4;
+  left: 155px;
+  bottom: 75px;
 }
 
 .about-offerings {
-  display: flex;
-  flex-direction: column;
+  width: 526px;
   padding-top: 29px;
 }
 
 .about-offerings-title {
-  height: 100px;
-  width: 526px;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
@@ -136,7 +116,6 @@ button {
 
 .about-offerings-text {
   width: 500px;
-  height: 72px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -150,9 +129,6 @@ button {
   margin-bottom: 32px;
 }
 
-.about-offerings-list-item {
-}
-
 .offerings-icon-box {
   display: flex;
   justify-content: center;
@@ -160,13 +136,16 @@ button {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #fefefe;
   margin-bottom: 8px;
+  background-color: #fefefe;
 }
 
 .offerings-icon {
   fill: #7eb101;
-  flex-shrink: 0;
+}
+
+.about-offerings-list-item {
+  width: 253px;
 }
 
 .about-offerings-feature-title {
@@ -176,7 +155,6 @@ button {
   margin-bottom: 16px;
 }
 .about-offerings-feature {
-  width: 253px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -184,17 +162,15 @@ button {
 
 .about-offerings-button {
   height: 40px;
-  padding: 10px 22px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  min-width: 106px;
   border-radius: 30px;
-  background-color: #fff;
-  border: 2px solid #7eb101;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
+  border: 2px solid #7eb101;
+  background-color: #fff;
+  outline: transparent;
+  outline-offset: 4px;
 }
 
 .about-offerings-button:hover,
