@@ -95,11 +95,28 @@ button {
   background-color: #fefefe;
 }
 
-.image {
+.apple-image {
   display: block;
   position: absolute;
+  z-index: 999;
   left: 60px;
   bottom: 78px;
+}
+
+.apple-shadow-icon {
+  position: absolute;
+  z-index: 998;
+  flex-shrink: 0;
+  left: 131px;
+  bottom: 51px;
+  filter: blur(13px);
+  fill: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0.7) 100%
+  );
+  filter: blur(13px);
+  opacity: 0.4;
 }
 
 .about-offerings {
