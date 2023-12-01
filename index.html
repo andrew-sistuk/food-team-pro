@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Delivery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <!-- Header Alina-->
     <main>
-    <!-- Hero Myhailo -->
-    <!-- Offerings Sasha -->
-    <!-- Favorites Ira -->
-    <!-- Customers Denis  -->
-    <!-- Subscribe Artem -->
+      <!-- Hero Myhailo -->
+      <!-- Offerings Sasha -->
+      <!-- Favorites Ira -->
+      <!-- Customers Denis  -->
+
+      <!-- ============ Subscribe Section (Artem) ================ -->
+      <section class="container">
+        <div class="order-pic">
+          <picture class="order-pic-dec">
+            <!-- DESKTOP Screen -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="./images/banan_desk.png 1x, ./images/banan_desk@2X.png 2x"
+              type="image/png"
+            />
+            <!-- TABLET Screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/banan_tab.png 1x, ./images/banan_tab@2X.png 2x"
+              type="image/png"
+            />
+            <!-- MOBILE Screen -->
+            <source
+              media="(min-width: 320px)"
+              srcset="./images/banan-mob.png 1x, ./images/banan-mob@2X.png 2x"
+              type="image/png"
+            />
+            <img
+              class="card-img"
+              src="./images/banan-mob.png"
+              alt="Banan pic"
+              width="280"
+              height="78"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <h3 class="subscribe-title">Subscribe To Get Special Offers</h3>
+        <p class="subscribe-descr">
+          Order now and receive 10% off your first meal with Enjoy Your Favorite
+          Food From Anywhere.
+        </p>
+        <form class="subscr-form">
+          <label class="subscr-label" for="user-email">
+            <input
+              class="subscr-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <button class="subsc-btn" type="submit">Subscribe</button>
+        </form>
+      </section>
+      <!-- ============ /Subscribe Section (Artem) ================ -->
     </main>
     <!-- Footer Yegor -->
-</body>
+  </body>
 </html>
