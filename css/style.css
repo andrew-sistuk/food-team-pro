@@ -1,14 +1,36 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #2C2C2C;
-  background-color: #FEFEFE;
+  color: #2c2c2c;
+  background-color: #fefefe;
 }
 
 .container {
-  width: 1280px;
-  padding: 0 16px;
-  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    width: 768px;
+    min-width: none;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 /* components */
@@ -21,8 +43,8 @@ body {
   font-weight: 500;
   line-height: 1.5;
   border-radius: 30px;
-  background: #BBF330;
-  color: #2C2C2C;
+  background: #bbf330;
+  color: #2c2c2c;
 }
 
 /* Стилі для обнулення верхніх відступів у елементів */
@@ -71,8 +93,7 @@ button {
 /* ======== Header ======== */
 
 .header {
-  box-shadow: 
-    0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
 }
 
 .header-container {
@@ -98,18 +119,17 @@ button {
   gap: 28px;
 }
 .header-nav-link {
-  color: #2C2C2C;
+  color: #2c2c2c;
   padding: 28px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  transition: 
-    color 250ms linear, text-decoration 250ms linear, font-weight 250ms linear;
+  transition: color 250ms linear, text-decoration 250ms linear, font-weight 250ms linear;
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
-  color: #BBF330;
+  color: #bbf330;
   font-weight: 700;
   text-decoration-line: underline;
 }
@@ -120,7 +140,7 @@ button {
 
 .header-button:hover,
 .header-button:focus {
-  background-color: #FFE450;
+  background-color: #ffe450;
 }
 
 /* ======== Hero-section ======== */
@@ -279,13 +299,13 @@ h1 {
 
 .about-offerings-button:hover,
 .about-offerings-button:focus {
-background-color: #bbf330;
+  background-color: #bbf330;
 }
 
 /* ======== Favorites ======== */
 
 .favorites-section {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
 }
 
 .favorites-container {
@@ -298,7 +318,7 @@ background-color: #bbf330;
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .text-favotites {
@@ -306,7 +326,7 @@ background-color: #bbf330;
   font-weight: 400px;
   text-align: center;
   margin-bottom: 40px;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 
 .favorites-box {
@@ -317,7 +337,7 @@ background-color: #bbf330;
 }
 
 .favorites-box-cell {
-  width: calc((100% - 64px)/3);
+  width: calc((100% - 64px) / 3);
 }
 
 .food-frame {
@@ -329,13 +349,13 @@ background-color: #bbf330;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 50%;
-  border: 16px solid #FFE550;
-  background-color: #FEFEFE;
+  border: 16px solid #ffe550;
+  background-color: #fefefe;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .food-frame:hover {
-  border-color: #BBF330;
+  border-color: #bbf330;
 }
 
 .food-img {
@@ -346,72 +366,125 @@ background-color: #bbf330;
 
 /* ======== Customers ======== */
 
-.section-dec {
-  padding: 140px 104px 126px 32px;
-  background-color: #FFE550;
-}
-
-.top-container {
-  margin-bottom: 33px;
+.section-customers {
+  padding-top: 60px;
+  padding-bottom: 8px;
+  background-color: green;
 }
 
 .title-customers {
-  color: #2C2C2C;
-  font-family: 'Roboto', sans-serif;
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .text-customers-info {
-  color: #2C2C2C;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
-.reviews {
-  display: flex;
-  gap: 139px;
+.top-container {
+  margin-bottom: 32px;
 }
 
-.review-container {
+.reviews {
   display: flex;
   flex-direction: column;
-  max-width: 501px;
-  height: 231px;
-  padding: 14px 14px 17px 14px;
-  border-radius: 0px 30px 30px 30px;
-  background-color: #FEFEFE;
+  gap: 24px;
 }
 
 .review-stars-container {
   display: flex;
-  height: 17px;
+  height: 16px;
   gap: 4px;
   margin-bottom: 29px;
 }
 
 .star {
-  fill: #FFE550;
+  fill: #ffe550;
 }
 
 .review-text {
-  color: #2C2C2C;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-.reviewer-info {
-display: flex;
-gap: 16px;
-align-items: center;
-border-right: 2px solid green;
-max-width: 180px;
+.name-customer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.descr-customer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .avatar {
-border-radius: 48px;
+  border-radius: 50%;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 160px;
+  border-right: 2px solid #7eb101;
+}
+
+.review-container {
+  padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-customers {
+    padding-top: 80px;
+    padding-bottom: 23px;
+  }
+
+  .title-customers {
+    font-size: 42px;
+  }
+
+  .text-customers-info {
+    font-size: 14px;
+  }
+
+  .reviews {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .review-container {
+    padding: 12px;
+  }
+
+  .review-text {
+    width: 312px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-customers {
+    padding-top: 140px;
+    padding-bottom: 126px;
+    background-color: #ffe550;
+  }
+
+  .reviews {
+    gap: 139px;
+  }
+
+  .review-text {
+    width: 473px;
+  }
+
+  .review-container {
+    padding: 14px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #fefefe;
+  }
 }
