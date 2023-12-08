@@ -369,7 +369,6 @@ h1 {
 .section-customers {
   padding-top: 60px;
   padding-bottom: 8px;
-  background-color: green;
 }
 
 .title-customers {
@@ -424,6 +423,8 @@ h1 {
 
 .avatar {
   border-radius: 50%;
+  background-color: #d3d3d3;
+  background-position: 50%;
 }
 
 .reviewer-info {
