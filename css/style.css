@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #2c2c2c;
   font-size: 16px;
+  color: #2c2c2c;
   background-color: #fefefe;
 }
 
@@ -45,6 +45,15 @@ button {
   cursor: pointer;
 }
 
+.descr-pic-dec {
+  transition: transform 0.3s ease;
+}
+
+.descr-pic-dec:hover,
+.descr-pic-dec:focus {
+  transform: scale(1.1);
+}
+
 .subscribe-title {
   width: 280px;
   color: #2c2c2c;
@@ -52,6 +61,14 @@ button {
   font-style: normal;
   font-weight: 700;
   margin-top: 17px;
+  transition: transform 0.3s ease;
+}
+
+.subscribe-title:hover,
+.subscribe-title:focus {
+  transform: scale(1.0155);
+  color: #ffe450;
+  text-shadow: 1px 1px solid #505050;
 }
 
 .subscribe-descr {
@@ -73,7 +90,7 @@ button {
   gap: 20px;
   height: 42px;
   /* padding: 12px 0px 12px 12px; */
-  }
+}
 
 .subscr-input {
   width: 279px;
@@ -86,17 +103,25 @@ button {
   outline-offset: 4px;
   outline-color: transparent;
   background-color: transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscr-input:focus {
+  border: 0.854px solid #ffe550;
+}
+
+.subscr-input:valid {
+  border: 0.854px solid #7eb101;
 }
 
 input::placeholder {
-    color: #505050);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 0.08;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #505050;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.08;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .subsc-btn {
   width: 103px;
@@ -108,28 +133,54 @@ input::placeholder {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
-  background: var(--Button-green, #bbf330);
-  color: var(--Black, #2c2c2c);
+  background: #bbf330;
+  color: #2c2c2c;
   border-radius: 30px;
-  }
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subsc-btn:hover,
+.subsc-btn:focus {
+  border: 2px solid #ffe450;
+  color: #ffe450;
+}
+
+.subsc-btn:active {
+  background-color: #ffe450;
+  color: white;
+}
+
+.container {
+  padding: 0 20px;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+.position-form {
+  display: flex;
+  width: 279px;
+}
 
 /* ============ Subscribe Section (Artem) ================ */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 17px;
     padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
+    padding: 0 32px;
     width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    min-width: none;
+    max-width: none;
   }
 
   .descr-pic {
@@ -137,13 +188,57 @@ input::placeholder {
     justify-content: flex-end;
   }
 
+  .subscribe-title {
+    width: 656px;
+    font-size: 42px;
+    margin-top: 20px;
+  }
+  .subscribe-descr {
+    width: 520px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .subscr-form {
+    flex-direction: row;
+    margin-top: 24px;
+    gap: 22px;
+  }
+
+  .subscr-input {
+    width: 395px;
+    padding: 12px 57px 12px 12px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding-left: 18px;
-    padding-right: 100px;
+  }
+
+  .sect-cont {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-top: 222px;
+    padding-right: 15px;
+  }
+
+  .descr-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe-descr {
+    width: 532px;
+  }
+
+  .desctop-content {
+    display: inline;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 656px;
   }
 }
 

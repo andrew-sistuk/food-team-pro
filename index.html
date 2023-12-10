@@ -28,7 +28,7 @@
       <!-- Customers Denis  -->
 
       <!-- ============ Subscribe Section (Artem) ================ -->
-      <section class="container">
+      <section class="container sect-cont">
         <div class="descr-pic">
           <picture class="descr-pic-dec">
             <!-- DESKTOP Screen -->
@@ -36,12 +36,16 @@
               media="(min-width: 1280px)"
               srcset="./images/banan_desk.png 1x, ./images/banan_desk@2X.png 2x"
               type="image/png"
+              width="608"
+              height="266"
             />
             <!-- TABLET Screen -->
             <source
               media="(min-width: 768px)"
               srcset="./images/banan_tab.png 1x, ./images/banan_tab@2X.png 2x"
               type="image/png"
+              width="281"
+              height="136"
             />
             <!-- MOBILE Screen -->
             <source
@@ -60,24 +64,29 @@
           </picture>
         </div>
 
-        <h3 class="subscribe-title">Subscribe To Get Special Offers</h3>
-        <p class="subscribe-descr">
-          Order now and receive 10% off your first meal with Enjoy Your Favorite
-          Food From Anywhere.
-        </p>
-        <form class="subscr-form">
-          <label class="subscr-label" for="user-email">
-            <input
-              class="subscr-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Enter your email"
-              required
-            />
-          </label>
-          <button class="subsc-btn" type="submit">Subscribe</button>
-        </form>
+        <div class="desctop-content">
+          <h3 class="subscribe-title">Subscribe To Get Special Offers</h3>
+          <p class="subscribe-descr">
+            Order now and receive 10% off your first meal with Enjoy Your
+            Favorite Food From Anywhere.
+          </p>
+          <div class="position-form">
+            <form class="subscr-form">
+              <label class="subscr-label" for="user-email">
+                <input
+                  class="subscr-input"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Enter your email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
+              </label>
+              <button class="subsc-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
       </section>
       <!-- ============ /Subscribe Section (Artem) ================ -->
     </main>
