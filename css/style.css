@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #2c2c2c;
   background-color: #fefefe;
@@ -73,18 +73,18 @@ button {
 .footer-section {
   padding: 100px 0;
   /* display: block; */
-  background-image: url("../images/fruts.png");
+  background-image: url('../images/fruts.png');
   background-repeat: no-repeat;
   background-position: 57% 100%;
   /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   background-size: 1203px 266px;
-  background-color: #fefefe;
   background-repeat: no-repeat;
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
 }
 
 .footer-nav {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -92,26 +92,26 @@ button {
 .footer-logo-options {
   display: flex;
   align-items: center;
-  gap: 143px;
+  /* gap: 143px; */
+  padding-left: 5px;
 }
 
 .footer-nav-options {
   gap: 28px;
   display: flex;
   color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 400;
   /* padding: 18px 0; */
 }
 
-.footer-nav-options,
-.footer-nav-link:visited {
-  font-size: 14px;
-  font-weight: 400;
+/* .footer-nav-link:visited {
   color: #2c2c2c;
-}
-
-/* .footer-logo {
-  margin-right: 143px;
 } */
+
+.footer-logo {
+  margin-right: 143px;
+}
 
 .footer-form {
   display: flex;
@@ -124,14 +124,14 @@ button {
   /* display: inline-flex; */
   width: 280px;
   height: 42px;
-  padding-left: 12px;
+  padding: 0 12px;
   /* padding: 12px 62px 12px 12px; */
   /* align-items: center; */
   /* flex-shrink: 0; */
   outline: transparent;
   /* margin-right: 13px; */
   border: 1px solid #ffe550;
-  background: #fefefe;
+  background: transparent;
 }
 
 .footer-form-input,
@@ -171,7 +171,7 @@ button {
   font-weight: 500;
   line-height: 1.5;
   /* width: 342px; */
-  color: #2c2c2c;
+  /* color: #2c2c2c; */
   margin-bottom: 12px;
 }
 
@@ -210,12 +210,12 @@ button {
   color: #7eb101;
 }
 
-.footer-info-link {
+/* .footer-info-link {
   color: #7eb101;
-}
+} */
 
 .footer-copyright {
   font-size: 12px;
   font-weight: 400;
-  color: #2c2c2c;
+  /* color: #2c2c2c; */
 }
