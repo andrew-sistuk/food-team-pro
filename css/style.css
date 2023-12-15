@@ -75,9 +75,9 @@ button {
   /* display: block; */
   background-image: url("../images/fruts.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 57% 100%;
   /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  background-size: cover;
+  background-size: 1203px 266px;
   background-color: #fefefe;
   background-repeat: no-repeat;
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
