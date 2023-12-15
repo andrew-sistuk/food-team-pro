@@ -28,41 +28,22 @@
       <!-- Customers Denis  -->
 
       <!-- ============ Subscribe Section (Artem) ================ -->
-      <section class="container sect-cont">
-        <div class="descr-pic">
-          <picture class="descr-pic-dec">
-            <!-- DESKTOP Screen -->
-            <source
-              media="(min-width: 1280px)"
-              srcset="./images/banan_desk.png 1x, ./images/banan_desk@2X.png 2x"
-              type="image/png"
-              width="608"
-              height="266"
-            />
-            <!-- TABLET Screen -->
-            <source
-              media="(min-width: 768px)"
-              srcset="./images/banan_tab.png 1x, ./images/banan_tab@2X.png 2x"
-              type="image/png"
-              width="281"
-              height="136"
-            />
-            <!-- MOBILE Screen -->
-            <source
-              media="(min-width: 320px)"
-              srcset="./images/banan-mob.png 1x, ./images/banan-mob@2X.png 2x"
-              type="image/png"
-            />
-            <img
-              class="card-img"
-              src="./images/banan-mob.png"
-              alt="Banan pic"
-              width="280"
-              height="78"
-              loading="lazy"
-            />
-          </picture>
-        </div>
+      <section class="container sect-cont mobile-cont">
+        <img
+          class="descr-pic descr-pic-dec"
+          src="./images/banan-mob.png"
+          alt="Banan pic"
+          loading="lazy"
+          sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (min-width: 480px) 280px"
+          srcset="
+            ./images/banan_desk.png     608w,
+            ./images/banan_desk@2x.png 1216w,
+            ./images/banan_tab.png      281w,
+            ./images/banan_tab@2x.png   562w,
+            ./images/banan-mob.png      280w,
+            ./images/banan-mob@2x.png   560w
+          "
+        />
 
         <div class="desctop-content">
           <h3 class="subscribe-title">Subscribe To Get Special Offers</h3>

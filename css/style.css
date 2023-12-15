@@ -56,9 +56,7 @@ button {
 
 .subscribe-title {
   width: 280px;
-  color: #2c2c2c;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   margin-top: 17px;
   transition: transform 0.3s ease;
@@ -73,13 +71,10 @@ button {
 
 .subscribe-descr {
   width: 280px;
-  color: #2c2c2c;
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .subscr-form {
@@ -99,15 +94,10 @@ button {
   border-radius: 30px;
   border: none;
   border: 0.854px solid #ffe550;
-  background: #fff;
   outline-offset: 4px;
   outline-color: transparent;
   background-color: transparent;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscr-input:focus {
-  border: 0.854px solid #ffe550;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscr-input:valid {
@@ -117,10 +107,9 @@ button {
 input::placeholder {
   color: #505050;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 0.08;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subsc-btn {
@@ -134,9 +123,9 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.5;
   background: #bbf330;
-  color: #2c2c2c;
   border-radius: 30px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subsc-btn:hover,
@@ -166,12 +155,15 @@ input::placeholder {
 @media screen and (min-width: 480px) {
   .container {
     width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-cont {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 17px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -181,6 +173,12 @@ input::placeholder {
     width: 768px;
     min-width: none;
     max-width: none;
+  }
+
+  .mobile-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 
   .descr-pic {
@@ -193,6 +191,7 @@ input::placeholder {
     font-size: 42px;
     margin-top: 20px;
   }
+
   .subscribe-descr {
     width: 520px;
     font-size: 16px;
