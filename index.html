@@ -62,7 +62,19 @@
             </p>
             <button class="hero-button" type="button">Order Now</button>
           </div>
-          <img class="hero-image main-image" src="./images/salad.png" alt="salad" width="528" height="528" />
+          <picture class="main-image">
+            <!-- Desktop -->
+            <source
+              media="(min-width: 1158px)"
+              srcset="./images/salad.png 1x, ./images/salad@2x.png 2x"
+              type="image/png" />
+            <!-- Tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/main-dish.png 1x, ./images/main-dish@2x.png 2x"
+              type="image/png" />
+            <img class="hero-image" src="./images/salad.png" alt="salad" width="528" height="528" />
+          </picture>
         </div>
       </section>
       <!-- Offerings Sasha -->
