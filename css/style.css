@@ -13,7 +13,6 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -180,6 +179,11 @@ h1 {
   background-color: #bbf330;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #ffe450;
 }
 
 .hero-image {
@@ -475,7 +479,7 @@ h1 {
   /* Hero-section-tablet */
 
   .hero {
-    padding-bottom: 58px;
+    padding-bottom: 94px;
   }
 
   h1 {
@@ -545,10 +549,6 @@ h1 {
   .hero {
     padding-top: 14px;
     padding-bottom: 69px;
-  }
-
-  .list-navigation a {
-    color: #2c2c2c;
   }
 
   .hero-container {
